@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeeKonnect+ Support</title>
+<meta name="description" content="Help for BeeKonnect+: your iPhone on Wear OS watches and Android phones.">
+<style>
+:root { --bg: #FFFBF3; --fg: #1F1A12; --muted: #5E5445; --line: #E7DCC6; --accent: #9A6400; --card: #FFFFFF; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16130E; --fg: #F3EDE2; --muted: #B9AE9C; --line: #3A3326; --accent: #F7B32B; --card: #1F1B14; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+header a { color: var(--fg); text-decoration: none; font-weight: 700; font-size: 20px; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+nav a { color: var(--accent); font-weight: 600; }
+h1 { font-size: 32px; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+a { color: var(--accent); }
+code { font: 0.9em ui-monospace, Menlo, monospace; }
+.lead { color: var(--muted); font-size: 19px; }
+.table { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 20px; margin: 16px 0; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header><a href="./">BeeKonnect+</a><nav><a href="./">Support</a><a href="privacy.html">Privacy</a></nav></header>
+
+<h1>BeeKonnect+ Support</h1>
+<p class="lead">Use your Wear OS watch or Android phone with your iPhone: notifications, calls,
+music, calendar, weather, reminders and Apple Health, directly over Bluetooth. No account, no cloud.</p>
+
+<h2>What you need</h2>
+<ul>
+<li>An iPhone with iOS 18 or later and the BeeKonnect+ app from the App Store.</li>
+<li>A Wear OS 4+ watch or an Android 13+ phone with BeeKonnect+ from Google Play.</li>
+</ul>
+
+<h2>Getting started</h2>
+<ol>
+<li>On the watch or Android phone, open BeeKonnect+ and tap <strong>Start</strong>. Follow its setup steps.</li>
+<li>On the iPhone, open BeeKonnect+ and tap <strong>Add device</strong>, then choose your device.</li>
+<li>Accept the Bluetooth pairing request on the iPhone and allow the device to receive your notifications.</li>
+<li>In the iPhone app, tap <strong>Send test notification</strong>: it should appear on your device within a few seconds.</li>
+</ol>
+
+<h2>Common questions</h2>
+<div class="card">
+<h3>Notifications don't appear on my device</h3>
+<p>On the iPhone, open Settings → Bluetooth, tap ⓘ next to your device and turn on
+<strong>Share System Notifications</strong>. On the device, make sure BeeKonnect+ may post
+notifications and isn't restricted by battery saving (the app's Setup checklist links to each setting).</p>
+<h3>My device disconnects after I swipe the iPhone app away</h3>
+<p>iOS stops Bluetooth apps you swipe away in the app switcher. Open BeeKonnect+ again and your
+devices reconnect. There's no need to swipe it away: it uses very little battery in the background.</p>
+<h3>Can I reply to messages or call back from the watch?</h3>
+<p>Yes. Pick a reply or dictate one; your iPhone shows a notification, and one tap there opens the
+messaging app with the text filled in, or starts the call. iOS doesn't let any app send messages or
+place calls on its own.</p>
+<h3>What does Ring iPhone do?</h3>
+<p>It plays a sound on your iPhone for up to 30 seconds, even in silent mode, so you can find it
+nearby. Stop it from your device, from the notification, or by opening the app.</p>
+<h3>How do I stop sharing something?</h3>
+<p>Turn off its switch under <em>Share with your devices</em> in the iPhone app. See the
+<a href="privacy.html">privacy policy</a> for how to delete data.</p>
+</div>
+
+<h2>Contact</h2>
+<p>Report a problem or ask a question by opening an issue at
+<a href="https://github.com/beeskode/beekonnect-site/issues">github.com/beeskode/beekonnect-site/issues</a>. Please include your iPhone and device
+models and, if you can, the link log (iPhone app → device → Share link log, or Android app →
+Settings → Share link log). It holds connection events only, never your notifications.</p>
+
+<footer>BeeKonnect+ by Vinhry. Not affiliated with Apple or Google. iPhone and Apple Health are
+trademarks of Apple Inc.; Android and Wear OS are trademarks of Google LLC.</footer>
+</main>
+</body>
+</html>

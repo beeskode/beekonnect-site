@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeeKonnect+ Privacy Policy</title>
+<meta name="description" content="BeeKonnect+ has no servers and collects nothing.">
+<style>
+:root { --bg: #FFFBF3; --fg: #1F1A12; --muted: #5E5445; --line: #E7DCC6; --accent: #9A6400; --card: #FFFFFF; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16130E; --fg: #F3EDE2; --muted: #B9AE9C; --line: #3A3326; --accent: #F7B32B; --card: #1F1B14; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+header a { color: var(--fg); text-decoration: none; font-weight: 700; font-size: 20px; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+nav a { color: var(--accent); font-weight: 600; }
+h1 { font-size: 32px; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+a { color: var(--accent); }
+code { font: 0.9em ui-monospace, Menlo, monospace; }
+.lead { color: var(--muted); font-size: 19px; }
+.table { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 20px; margin: 16px 0; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header><a href="./">BeeKonnect+</a><nav><a href="./">Support</a><a href="privacy.html">Privacy</a></nav></header>
+<h1>Privacy Policy</h1>
+<p><em>Effective 29 September 2026 · BeeKonnect+ 1.0 for iPhone, Android phones and Wear OS watches.</em></p>
+<p><strong>BeeKonnect+ has no servers and collects nothing.</strong> Data moves only between your own iPhone and your own watch or Android phone, directly over Bluetooth. No analytics, no crash reporting service, no ads, no accounts.</p>
+<h2>What goes where</h2>
+<div class="table"><table><thead><tr><th>Data</th><th>From → to</th><th>Stored</th></tr></thead><tbody><tr><td>Notification content (app, title, message)</td><td>iPhone → your devices (Apple's ANCS)</td><td>On the Android device: the notification itself and an in-app history of the last 50, in memory only. Never written to disk or logs</td></tr><tr><td>Music info, iPhone battery</td><td>iPhone → your devices (AMS, Battery Service)</td><td>Last values, on the device (for widgets)</td></tr><tr><td>Calendar events (next 24 h), weather</td><td>iPhone → your devices, when you turn them on</td><td>Last values, on the device</td></tr><tr><td>Contact photos</td><td>iPhone → your devices, for incoming calls</td><td>In memory only</td></tr><tr><td>Replies you start on a device</td><td>Device → iPhone, then shown as a notification on the iPhone</td><td>Not stored</td></tr><tr><td>Contact lookup for a reply or call-back</td><td>Stays on the iPhone</td><td>Not stored</td></tr><tr><td>Steps, heart rate, distance, floors, workouts, routes</td><td>Watch → iPhone → Apple Health, when you turn Health on</td><td>Queued on the watch until Apple Health has them, then deleted there</td></tr><tr><td>Sleep (stages), weight, blood oxygen</td><td>Android phone's Health Connect → iPhone → Apple Health, when you allow it in Health Connect and turn Health on</td><td>Read from the last 7 days; queued on the phone until Apple Health has them. A list of what was already sent (ids only, 14 days) avoids resending. Never written to Health Connect</td></tr><tr><td>Reminders due today (title, due time, list)</td><td>iPhone → your devices, when you turn Reminders on; a checked-off one goes back to complete it</td><td>Last list, on the device (for the tile)</td></tr><tr><td>Whether a Focus is on (not which)</td><td>iPhone → your devices, when you turn Focus on</td><td>Not stored</td></tr><tr><td>Device battery</td><td>Device → iPhone</td><td>On the iPhone (for the widget)</td></tr><tr><td>Link log</td><td>Stays on each device</td><td>Last 300 connection events, no content, no names; shared only when you tap Share</td></tr></tbody></table></div>
+<p>Weather comes from Apple's WeatherKit using your iPhone's approximate location, under Apple's privacy policy. Nothing else leaves your devices.</p>
+<h2>Permissions and why</h2>
+<p><strong>iPhone:</strong> Bluetooth (connect to your devices), notifications (Ring iPhone, replies), calendar, location while in use (weather), contacts (caller photos, reply recipients), Health, write only (save your watch's data), reminders, Focus status. Each is asked for when you turn the matching feature on.</p>
+<p><strong>Android:</strong> Bluetooth connect/advertise (the link), notifications (show your iPhone's), full-screen intent (incoming calls over the lock screen), foreground service (keep the link up), boot (reconnect after a restart), activity recognition and heart rate (health, workouts), location (workout routes, only while a workout is recording), Health Connect read access to sleep, weight and oxygen saturation, with background reading (phone only; steps and heart rate aren't read, so they're never counted twice).</p>
+<h2>Your choices and deleting your data</h2>
+<ul><li><strong>Turn a feature off</strong> with its switch under <em>Share with your devices</em> in the iPhone app; the devices stop receiving that data. Permissions can also be withdrawn at any time in iOS Settings (Privacy &amp; Security) or Android Settings → Apps → BeeKonnect+ → Permissions.</li><li><strong>Apple Health:</strong> what BeeKonnect+ saved is yours and stays in the Health app. Delete it there (Health app → your profile picture → Apps → BeeKonnect+ → Delete All Data), and stop new writes in Settings → Privacy &amp; Security → Health → BeeKonnect+.</li><li><strong>Health Connect:</strong> revoke BeeKonnect+'s access in Health Connect's app permissions.</li><li><strong>Everything else</strong> lives only on your devices: <em>Forget</em> a device in the iPhone app, clear the app's storage on Android, or uninstall the apps to remove it all. There is nothing on any server for us to delete, because we never receive your data.</li></ul>
+<h2>Children</h2>
+<p>BeeKonnect+ isn't directed at children and collects nothing from anyone.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version is posted at the same address with a new effective date, and the app's release notes say so.</p>
+<h2>Contact</h2>
+<p>Questions or requests: open an issue at <a href="https://github.com/beeskode/beekonnect-site/issues">https://github.com/beeskode/beekonnect-site/issues</a>.</p>
+<footer>BeeKonnect+ by Vinhry. Not affiliated with Apple or Google. iPhone and Apple Health are
+trademarks of Apple Inc.; Android and Wear OS are trademarks of Google LLC.</footer>
+</main>
+</body>
+</html>
